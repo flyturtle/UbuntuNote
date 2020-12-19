@@ -1,32 +1,34 @@
 # Ubuntu ver.EN
+
+[![hackmd-github-sync-badge](https://hackmd.io/thzo_7ReTaOyhG1MhqO4zQ/badge)](https://hackmd.io/thzo_7ReTaOyhG1MhqO4zQ)
+
 ###### tags: `Ubuntu`
-[toc]
->[time=Apr 24, 2018]
+
+
 >CPU 
->>Intel^(r)^Core^(tm)^ i5-7400  3.0GHz*4[color=#000000]
+>>Intel^(r)^Core^(tm)^ i5-7400  3.0GHz*4
 >
 >RAM 
->>8.00GB [color=#000000]
+>>8.00GB 
 >
 >GPU 
->Nvidia GeForce GTX 1050 [color=#000000]
+>>Nvidia GeForce GTX 1050 
 >
 >Disk
->>/dev/sda/ 
->>>WDC WD10EZEX-00MFCA0 (01.01A01)[color=#000000]
->>
->>/dev/sdb/
->>>TOSHIBA DT01ACA100 (MS2OA750)[color=#000000]
+> 
+>>WDC,TOSHIBA 
 >
 >os
->Ubnutu[color=#12ff12]
->17.10[time=Apr 24, 2018]
->18.04LTS[time=May 2, 2018]
+>>Ubnutu 20.04.1LTS
+
+
+>single board
+>>raspiberry pi 4 4G
 >
->
->Triple boot win7,win10,ubuntu [time=May 31, 2018]
->Dual boot win10,ubuntu [time=Jun 6,2018]
->
+>nas
+>>synology ds218play
+
+
 
 
 
@@ -532,10 +534,12 @@ connects & binds port
 
 ```terminal=
 
-```
 ffmpeg -i 10_bit.mkv \
        -c:v libx265 -preset medium -x265-params crf=28 -pix_fmt yuv420p \
        -c:a copy \
        8_bit.mkv
        
-       
+```
+import part is 
+```-pix_fmt yuv420p``` 
+Form 10 bit to 8 bit
